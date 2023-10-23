@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <title>navigation</title>
+        <style>
+            body {background-color: rgb(179, 212, 255);
+                padding: 0;
+                margin: 0;
+   
+
+            }
+            
+            li>a{display: block;
+                background-color: rgb(34, 34, 145);
+                height: 30px;
+                width: 80px;
+                padding-top: 10px;
+                
+            }
+         .logo{
+            color: azure;
+            font-size: 90px;
+            line-height: 80px;
+            padding:100px;
+            font-weight: bold;
+         }  
+         nav, ul{
+            float: right;
+            margin-left: 30px;
+         }     
+         nav, ul, li{
+            display: inline-block;
+            line-height:0;
+            margin:15px;
+            margin-top: 8px;
+         }  
+         nav, ul, li, a {
+            color: azure;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 5px;
+            border-radius: 5px;
+         } 
+         a.active,a:hover{
+            background-color: aqua;
+            transition: 1s;
+         }
+         @media screen and (max-width:400px){
+            nav,ul, li, a {
+               flex-direction: column;
+
+            }
+            
+         }
+        </style>
+
+    </head>
+    <body>
+      <nav>
+        <label class="logo">mlab</label>
+            <ul>
+         <li><a class="active" >home</a></li>
+          <li><a class="about">about</a></li>
+          <li><a class="service">service</a></li>
+          <li><a class="contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </body>
+</html>
